@@ -1,0 +1,1 @@
+"# ai-recipe-generator"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/gerrymcdonnell/ai-recipe-generator.gitgit push -u origin main
