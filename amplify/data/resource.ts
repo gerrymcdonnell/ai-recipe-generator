@@ -12,7 +12,7 @@ const schema = a.schema({
     .authorization((allow) => [allow.authenticated()])
     .handler(
       a.handler.custom({
-        entry: "../amplify/data/bedrock.js",
+        entry: "../bedrock.js",
         dataSource: "bedrockDS"
       })
     ),
