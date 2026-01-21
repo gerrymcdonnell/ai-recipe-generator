@@ -42,7 +42,7 @@ function App() {
           <span className="highlight">Recipe AI</span>
         </h1>
         <p className="description">
-          Simply type a few ingredients using the format ingredient1,
+          test Simply type a few ingredients using the format ingredient1,
           ingredient2, etc., and Recipe AI will generate an all-new
           recipe on
           demand...
