@@ -6,13 +6,22 @@ import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import outputs from "../amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
+import { signOut } from "aws-amplify/auth"
+
 Amplify.configure(outputs);
 const amplifyClient = generateClient<Schema>({
   authMode: "userPool",
 });
+
 function App() {
   const [result, setResult] = useState<string>("");
   const [loading, setLoading] = useState(false);
+
+    async function handleSignOut() {
+      await signOut()
+    }
+
+
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
@@ -35,6 +44,11 @@ function App() {
   };
   return (
     <div className="app-container">
+    
+    <button type="button" onClick={handleSignOut}>
+      Sign out
+    </button>
+
       <div className="header-container">
         <h1 className="main-header">
           Local - Meet Your Personal
