@@ -37,12 +37,12 @@ function App() {
     <div className="app-container">
       <div className="header-container">
         <h1 className="main-header">
-          Meet Your Personal
+          Local - Meet Your Personal
           <br />
           <span className="highlight">Recipe AI</span>
         </h1>
         <p className="description">
-          test Simply type a few ingredients using the format ingredient1,
+          Simply type a few ingredients using the format ingredient1,
           ingredient2, etc., and Recipe AI will generate an all-new
           recipe on
           demand...
