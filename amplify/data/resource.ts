@@ -9,7 +9,7 @@ const schema = a.schema({
     .query()
     .arguments({ ingredients: a.string().array() })
     .returns(a.ref("BedrockResponse"))
-    .authorization((allow) => [allow.guest()])
+    .authorization((allow) => [allow.authenticated()])
     .handler(
       a.handler.custom({
         entry: "bedrock.js",
